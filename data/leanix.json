@@ -1,0 +1,9 @@
+{
+  "exported_at":"2026-11-04T12:00:00Z",
+  "applications":[
+    {"id":"checkout-api","name":"Checkout API","owner":"Commerce Platform","lifecycle":"active","dependencies":["orders-db","identity-service"]},
+    {"id":"orders-db","name":"Orders database","owner":null,"lifecycle":"active","dependencies":[]},
+    {"id":"identity-service","name":"Identity service","owner":"Identity Platform","lifecycle":"active","dependencies":[]},
+    {"id":"legacy-bus","name":"Legacy event bus","owner":"Integration","lifecycle":"phase-out","dependencies":[]}
+  ]
+}

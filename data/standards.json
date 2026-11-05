@@ -1,0 +1,7 @@
+[
+  {"id":"SEC-01","title":"Service authentication","kinds":["service"],"control":"authentication","expected":"oidc","recommendation":"Use the shared OIDC identity provider and validate audience and issuer.","excerpt":"All service entry points must authenticate using the shared OIDC provider.","revision":"demo-1"},
+  {"id":"SEC-02","title":"Encryption at rest","kinds":["database"],"control":"encryption","expected":"aes-256","recommendation":"Enable AES-256 storage encryption with managed keys.","excerpt":"Persistent application databases must use AES-256 encryption at rest.","revision":"demo-1"},
+  {"id":"OPS-01","title":"Service telemetry","kinds":["service"],"control":"telemetry","expected":"opentelemetry","recommendation":"Instrument service boundaries with OpenTelemetry traces and metrics.","excerpt":"Production services must emit OpenTelemetry traces and metrics.","revision":"demo-1"},
+  {"id":"DATA-01","title":"Default retention","kinds":["database"],"control":"retention","expected":"30-days","recommendation":"Use a 30-day retention period.","excerpt":"The default database retention period is 30 days.","revision":"demo-1"},
+  {"id":"DATA-02","title":"Payments retention addendum","kinds":["database"],"control":"retention","expected":"90-days","recommendation":"Confirm the approved retention period with the data owner.","excerpt":"Database retention is 90 days. This draft does not define an exception hierarchy.","revision":"demo-draft-2"}
+]

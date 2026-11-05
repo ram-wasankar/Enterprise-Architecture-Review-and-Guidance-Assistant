@@ -1,0 +1,7 @@
+{
+  "name": "architecture-review-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs"
+  }
+}
